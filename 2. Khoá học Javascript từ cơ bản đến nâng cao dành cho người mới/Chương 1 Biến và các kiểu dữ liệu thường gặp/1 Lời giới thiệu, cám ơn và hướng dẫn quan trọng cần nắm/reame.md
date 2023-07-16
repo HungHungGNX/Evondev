@@ -1,0 +1,11 @@
+-   Github: https://github.com/evondev/javascript-course
+-   Các extension nên vài nếu chưa có
+-   Turbo console log
+-   Visual Studio IntelliCode
+-   Javascript code snippets
+-   Babel Javascript
+-   Auto Rename tag
+-   Evondev snippets
+-   Live Server
+-   Prettier
+-   Local History

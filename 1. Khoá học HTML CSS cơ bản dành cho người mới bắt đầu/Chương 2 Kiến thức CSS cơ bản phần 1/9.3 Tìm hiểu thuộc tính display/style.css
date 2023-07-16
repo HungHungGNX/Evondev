@@ -1,0 +1,11 @@
+a {
+    color: white;
+    text-decoration: none;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    background-color: black;
+    display: inline-block;
+    display: inline;
+    display: none;
+}

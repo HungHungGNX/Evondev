@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins";
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.notification {
+    width: 500px;
+    max-width: calc(100% - 24px);
+    height: 186px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    gap: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    transform: translateY(150%);
+    animation: noti 4s forwards 1 linear;
+}
+
+.noti-img {
+    width: calc(40% - 0.5rem);
+    border-radius: 1rem;
+}
+
+.noti-content {
+    width: calc(60% - 0.5rem);
+    padding: 2rem;
+}
+
+.noti-title {
+    font-weight: bold;
+    font-size: 1.8;
+}
+
+.noti-desc {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+
+@keyframes noti {
+    0% {
+        transform: translateY(150%);
+    }
+    20%,
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(150%);
+    }
+}

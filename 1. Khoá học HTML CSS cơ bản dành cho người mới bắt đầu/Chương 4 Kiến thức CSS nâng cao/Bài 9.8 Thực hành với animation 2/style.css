@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circles {
+    margin: 50px;
+    text-align: center;
+    animation: loading 1s alternate forwards infinite linear;
+}
+
+.circles .circle-item {
+    margin-left: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 20px solid #53d3dc;
+    border-radius: 50%;
+}
+
+.circles .circle-item:first-child {
+    border: 20px solid #537adc;
+}
+
+@keyframes loading {
+    50% {
+        transform: rotate(200deg);
+    }
+    75% {
+        transform: rotate(160deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}

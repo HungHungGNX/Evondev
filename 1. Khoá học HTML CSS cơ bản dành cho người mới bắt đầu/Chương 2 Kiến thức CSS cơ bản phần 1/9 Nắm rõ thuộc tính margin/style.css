@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.margin {
+    width: 14rem;
+    height: 14rem;
+    background-color: rgb(72, 184, 244);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* Center */
+    margin-left: auto;
+    margin-right: auto;
+
+    margin: 10px 10px 10px 10px;
+
+    /* 1 gia tri top = bottom = left = right */
+    margin: 20px;
+    /* 2 gia tri top = bottom ; left=right */
+    margin: 10px 20px;
+    /* 3 gia tri top ; left = right ; bottm */
+    margin: 20px 10px 20px;
+    /* 4 gia tri top left right bottom */
+    margin: 10px 20px 20px 30px;
+}

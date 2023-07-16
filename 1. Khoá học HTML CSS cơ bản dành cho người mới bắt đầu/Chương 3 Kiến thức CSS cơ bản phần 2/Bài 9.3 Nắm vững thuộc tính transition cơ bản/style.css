@@ -1,0 +1,16 @@
+.box {
+    margin: 40px auto;
+    width: 500px;
+    height: 300px;
+    background: #36aaf3;
+    border-radius: 10px;
+    transition: all 0.4s linear;
+    /* transition: property timer 2s easing; */
+    /* transition: background-color 0.2s linear, color 0.2s linear; */
+    /* transition-delay: 2s; */
+}
+
+.box:hover {
+    cursor: pointer;
+    background-color: #6bf8d2;
+}

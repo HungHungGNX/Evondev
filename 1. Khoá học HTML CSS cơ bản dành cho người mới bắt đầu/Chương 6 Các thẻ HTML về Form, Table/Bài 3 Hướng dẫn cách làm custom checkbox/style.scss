@@ -1,0 +1,52 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+.checkbox {
+    &__input {
+        display: none;
+        &:checked + .checkbox__label::after {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    margin: 5rem;
+    &__label {
+        position: relative;
+        padding-left: 5rem;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            content: "";
+            @include size(4rem);
+            background-color: #fc556f;
+            border-radius: 1rem;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 1rem;
+            @include size(2rem, 1rem);
+            transform: rotate(-45deg);
+            border-left: 3px solid #fff;
+            border-bottom: 3px solid #fff;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.25s linear;
+        }
+    }
+}

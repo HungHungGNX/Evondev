@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thực hành code giao diện Dropdown</title>
+        <!-- Reset css -->
+        <link rel="stylesheet" href="reset.css" />
+        <!-- Embed css -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Embed icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Style css -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="dropdown">
+            <div class="dropdown__select">
+                <i class="dropdown__icon fa fa-file"></i>
+                <span class="dropdown__text">File type</span>
+                <i class="fa fa-caret-down dropdown__caret"></i>
+            </div>
+
+            <ul class="dropdown__list">
+                <!-- Item 1 -->
+                <div class="dropdown__item">
+                    <i class="dropdown__icon fa fa-file"></i>
+                    <span class="dropdown__text">Markup HTML</span>
+                </div>
+                <!-- Item 2 -->
+                <div class="dropdown__item">
+                    <i class="dropdown__icon fa fa-file"></i>
+                    <span class="dropdown__text">Photoshop PDF</span>
+                </div>
+                <!-- Item 3 -->
+                <div class="dropdown__item">
+                    <i class="dropdown__icon fa fa-file"></i>
+                    <span class="dropdown__text">IIIutrator AI</span>
+                </div>
+                <!-- Item 4 -->
+                <div class="dropdown__item">
+                    <i class="dropdown__icon fa fa-file"></i>
+                    <span class="dropdown__text">Sketch Sketch</span>
+                </div>
+            </ul>
+        </div>
+    </body>
+</html>

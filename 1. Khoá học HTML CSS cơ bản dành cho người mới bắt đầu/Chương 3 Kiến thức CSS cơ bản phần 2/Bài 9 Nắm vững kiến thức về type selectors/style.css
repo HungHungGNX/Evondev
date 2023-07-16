@@ -1,0 +1,15 @@
+ul li:first-of-type {
+    color: red;
+}
+
+ul li:first-of-type span {
+    color: lightblue;
+}
+
+li:nth-of-type(odd) {
+    color: green;
+}
+
+li:nth-of-type(even) {
+    color: green;
+}

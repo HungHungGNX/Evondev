@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ex03</title>
+        <link rel="stylesheet" href="./reset.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <style>
+            ::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: linear-gradient(to bottom, #6fbbed, #63f4e5);
+                border-radius: 999px;
+            }
+            .group-color {
+                padding: 30px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+            }
+
+            .color__item {
+                height: 220px;
+                border-radius: 8px;
+                background-image: linear-gradient(to right, #77b7fb, #54f8da);
+            }
+
+            .color__item:first-child {
+                background-color: #4158d0;
+                background-image: linear-gradient(
+                    43deg,
+                    #4158d0 0%,
+                    #c850c0 46%,
+                    #ffcc70 100%
+                );
+            }
+            .color__item:nth-child(2) {
+                background-color: #0093e9;
+                background-image: linear-gradient(
+                    160deg,
+                    #0093e9 0%,
+                    #80d0c7 100%
+                );
+            }
+            .color__item:nth-child(3) {
+                background-color: #8ec5fc;
+                background-image: linear-gradient(
+                    62deg,
+                    #8ec5fc 0%,
+                    #e0c3fc 100%
+                );
+            }
+            .color__item:nth-child(4) {
+                background-color: #d9afd9;
+                background-image: linear-gradient(
+                    0deg,
+                    #d9afd9 0%,
+                    #97d9e1 100%
+                );
+            }
+
+            .color__item:last-child {
+                background-color: #fbab7e;
+                background-image: linear-gradient(
+                    62deg,
+                    #fbab7e 0%,
+                    #f7ce68 100%
+                );
+            }
+
+            .color__item:nth-last-child(2) {
+                background-color: #85ffbd;
+                background-image: linear-gradient(
+                    45deg,
+                    #85ffbd 0%,
+                    #fffb7d 100%
+                );
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Sử dụng CSS về `child` hoặc type để làm các màu như hình ví dụ `color__item:firt-child{background-color:red}`:https://cdn.dribbble.com/users/757683/screenshots/5942067/attachments/1281258/style_02.jpg -->
+        <!-- width:215px ; height:220px -->
+
+        <div class="group-color">
+            <div class="color__item"></div>
+            <div class="color__item"></div>
+            <div class="color__item"></div>
+            <div class="color__item"></div>
+            <div class="color__item"></div>
+            <div class="color__item"></div>
+            <div class="color__item"></div>
+            <div class="color__item"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.note {
+    background-color: #acd4ee;
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-left: 8px solid #179bf3;
+    border-radius: 10px;
+    /* 1 gia tri top = bottom = left = right */
+    /* padding: 20px; */
+    /* 2 gia tri top = bottom ; left=right */
+    /* padding: 10px 20px; */
+    /* 3 gia tri top ; left = right ; bottm */
+    /* padding: 20px 10px 20px; */
+    /* 4 gia tri top left right bottom */
+    /* padding: 10px 20px 20px 30px; */
+}

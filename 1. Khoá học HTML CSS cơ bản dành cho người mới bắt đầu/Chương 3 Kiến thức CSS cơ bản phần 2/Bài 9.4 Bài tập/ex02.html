@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ex02</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .title {
+                margin-top: 50px;
+                text-align: center;
+                font-size: 5rem;
+                font-weight: bold;
+            }
+
+            @supports (-webkit-background-clip: text) {
+                .title strong {
+                    background-image: linear-gradient(
+                        to right,
+                        #43ccf6,
+                        #42fbd9
+                    );
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="title">Learn <strong>HTML CSS</strong> With Me!</h1>
+    </body>
+</html>

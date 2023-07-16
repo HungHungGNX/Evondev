@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.triangle {
+    margin: 50px;
+    display: inline-block;
+    border: 100px solid #5cc5f2;
+    border-color: transparent transparent #5cc5f2;
+}

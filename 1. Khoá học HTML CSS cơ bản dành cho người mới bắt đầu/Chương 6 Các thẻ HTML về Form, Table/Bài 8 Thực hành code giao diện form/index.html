@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hướng dẫn cách làm custom radio</title>
+        <!-- reset css -->
+        <link rel="stylesheet" href="./reset.css" />
+        <!-- Embed icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Embed fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="signup">
+            <div class="signup__content">
+                <h1 class="signup__heading">Sign Up</h1>
+                <h2 class="signup__caption">Sign up with</h2>
+                <div class="signup-social">
+                    <!-- Item1 -->
+                    <div class="signup-social__item">
+                        <i class="fab fa-google signup-social__icon"></i>
+                        <span class="signup-social__text"
+                            >Sign up with Google</span
+                        >
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="signup-social__item">
+                        <i class="fab fa-facebook signup-social__icon"></i>
+                        <span class="signup-social__text"
+                            >Sign up with Facebook</span
+                        >
+                    </div>
+                </div>
+                <form class="signup-form" autocomplete="off">
+                    <div class="signup-form__row">
+                        <!-- Item 1 -->
+                        <div class="signup-form__group">
+                            <label for="name" class="signup-form__label"
+                                >Name</label
+                            >
+                            <div class="signup-form__validate">
+                                <input
+                                    type="text"
+                                    class="signup-form__input"
+                                    id="name"
+                                    required
+                                    placeholder="Name"
+                                />
+                                <div class="signup-form__check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="signup-form__group">
+                            <label for="email" class="signup-form__label"
+                                >Email</label
+                            >
+                            <input
+                                type="email"
+                                class="signup-form__input"
+                                id="email"
+                                required
+                                placeholder="Email"
+                            />
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="signup-form__group">
+                        <label for="password" class="signup-form__label"
+                            >Password</label
+                        >
+                        <input
+                            type="password"
+                            class="signup-form__input"
+                            id="password"
+                            required
+                            minlength="10"
+                            placeholder="Password"
+                        />
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="signup-form__term">
+                        <input type="checkbox" name="" id="term" />
+                        <label for="term"
+                            >I have read and agree with term</label
+                        >
+                    </div>
+                    <button class="signup-form__submit" type="submit">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                    <p class="signup__already">
+                        Already signin have an account ? <a href="#!">Signin</a>
+                    </p>
+                </form>
+            </div>
+            <div class="signup__image">
+                <img src="./img-1.png" alt="" />
+            </div>
+        </div>
+    </body>
+</html>

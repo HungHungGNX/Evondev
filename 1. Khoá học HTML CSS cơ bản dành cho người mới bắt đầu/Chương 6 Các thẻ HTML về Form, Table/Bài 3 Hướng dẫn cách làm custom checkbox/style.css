@@ -1,0 +1,50 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+.checkbox {
+  margin: 5rem;
+}
+.checkbox__input {
+  display: none;
+}
+.checkbox__input:checked + .checkbox__label::after {
+  opacity: 1;
+  visibility: visible;
+}
+.checkbox__label {
+  position: relative;
+  padding-left: 5rem;
+}
+.checkbox__label::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  background-color: #fc556f;
+  border-radius: 1rem;
+}
+.checkbox__label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  width: 2rem;
+  height: 1rem;
+  transform: rotate(-45deg);
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s linear;
+}
+
+/*# sourceMappingURL=style.css.map */

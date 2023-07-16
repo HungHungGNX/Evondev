@@ -1,0 +1,22 @@
+input,
+select,
+textarea,
+button {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: normal;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="numer"]::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+input:focus {
+    border: 1px solid red;
+}

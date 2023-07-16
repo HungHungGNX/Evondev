@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+.title {
+    padding-left: 4rem;
+    position: relative;
+    display: inline-block;
+    margin: 5rem;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #589bf9, #63d1fc);
+}
+
+.title::before {
+    position: absolute;
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: linear-gradient(to right, #589bf9, #63d1fc);
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

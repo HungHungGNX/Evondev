@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins";
+    font-size: 1.6rem;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(217, 227, 236, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.modal.is-show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    padding: 1rem 2rem 2rem;
+    width: 600px;
+    max-width: calc(100% - 24px);
+    background-color: #fff;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.btn-close {
+    padding: 0.8rem 0.8rem;
+    background-color: #86c6f482;
+    align-self: flex-end;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #57a1f0;
+}
+
+.modal-desc {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    user-select: none;
+}
+
+.modal-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.modal-action button {
+    width: calc(40% - 0.5rem);
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.modal-submit {
+    background-color: #57a1f0;
+}
+
+.modal-cancel {
+    background-color: rgb(250, 145, 163);
+}

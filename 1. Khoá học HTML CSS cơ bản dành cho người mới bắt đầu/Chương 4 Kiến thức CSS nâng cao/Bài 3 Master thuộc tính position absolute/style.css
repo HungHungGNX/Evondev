@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 500px;
+}
+
+.box {
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    /* Góc trái 
+    top: 0;
+    left: 0; */
+    /* Góc phải 
+    top: 0;
+    right: 0; */
+    /* Góc trái bên dưới
+    bottom: 0;
+    left: 0;  */
+    /* Góc phải bên dưới
+    bottom: 0;
+    right: 0; */
+    /* Căn giữa theo chiều dọc
+    top: 50%;
+    transform: translateY(-50%); */
+    /* Căn giữa theo chiều ngang
+    left: 50%;
+    transform: translateX(-50%); */
+    /* Căn giữa
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+    /* Overlay all
+    Cách 1
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    Cách 2
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; */
+    /* Overlay theo chiều ngang
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0; */
+    /* Overlay theo chiều dọc
+    height: auto;
+    top: 0;
+    left: 0;
+    bottom: 0; */
+}

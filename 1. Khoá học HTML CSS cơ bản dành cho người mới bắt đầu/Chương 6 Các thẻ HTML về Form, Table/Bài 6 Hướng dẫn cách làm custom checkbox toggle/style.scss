@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+.toggle {
+    margin: 5rem;
+    &__input {
+        display: none;
+        &:checked + .toggle__label {
+            background-color: #e49d9d;
+            .toggle__spin {
+                transform: translateX(5rem);
+            }
+        }
+    }
+
+    &__label {
+        display: inline-block;
+        @include size(10rem, 5rem);
+        background-color: #ccc;
+        border-radius: 5rem;
+        cursor: pointer;
+        padding: 5px;
+        transition: all 0.3s linear;
+    }
+    &__spin {
+        @include size(4rem);
+        background-color: lightblue;
+        border-radius: 4rem;
+        transition: all 0.3s linear;
+    }
+}

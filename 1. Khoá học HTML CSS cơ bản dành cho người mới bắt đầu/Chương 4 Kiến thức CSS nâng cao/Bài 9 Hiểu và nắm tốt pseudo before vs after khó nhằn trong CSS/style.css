@@ -1,0 +1,7 @@
+.title::after {
+    content: " tamy nè";
+}
+
+.title::before {
+    content: "super project ";
+}

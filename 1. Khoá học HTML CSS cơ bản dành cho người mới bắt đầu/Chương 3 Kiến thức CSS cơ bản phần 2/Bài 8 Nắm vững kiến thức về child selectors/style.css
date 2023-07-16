@@ -1,0 +1,44 @@
+html {
+    font-size: 62.5%;
+}
+
+ul {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: orange;
+}
+
+li:nth-child(2) {
+    color: purple;
+}
+
+li:nth-last-child(2) {
+    color: blue;
+}
+
+li:not(:first-child) {
+    color: yellow;
+}
+
+li:not(:last-child) {
+    color: lightblue;
+}
+
+li:nth-child(even) {
+    color: aqua;
+}
+
+li:nth-child(odd) {
+    color: green;
+}
+
+li:nth-child(2n + 3) {
+    color: pink;
+}

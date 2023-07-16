@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-color: rgb(203, 225, 245);
+}
+
+.flash-message {
+    width: 300px;
+    height: 468px;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 24px 21px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.flash-message__img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.flash-message__title {
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.flash-message__title--primary {
+    color: rgb(58, 204, 245);
+}
+
+.flash-message__title--secondary {
+    color: rgb(249, 62, 87);
+}
+
+.flash-message__desc {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.flash-message__btn {
+    margin-top: 35px;
+    border: none;
+    width: 90%;
+    height: 50px;
+    border-radius: 999px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.flash-message__btn--primary {
+    background-color: rgb(58, 204, 245);
+}
+.flash-message__btn--secondary {
+    background-color: rgb(249, 62, 87);
+}

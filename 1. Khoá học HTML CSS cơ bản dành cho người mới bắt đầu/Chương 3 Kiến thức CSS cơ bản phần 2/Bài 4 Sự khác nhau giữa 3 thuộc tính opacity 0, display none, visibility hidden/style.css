@@ -1,0 +1,13 @@
+.boxed {
+    margin: 40px auto;
+    width: 500px;
+    height: 300px;
+    border-radius: 16px;
+    background: linear-gradient(to right, #2a93e9, #4bf1bd);
+    /* vẫn chiếm diện tích, có thể nhấn vô được */
+    opacity: 0;
+    /* vẫn chiếm diện tích nhưng không tương tác được */
+    visibility: hidden;
+    /* Không chiếm diện tích và không nhấn vô được */
+    display: none;
+}

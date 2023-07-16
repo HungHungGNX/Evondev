@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Giải bài tập chương 1</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!-- Liệt kê 10 thẻ inline, 10 thẻ block và các thẻ semantic HTML5 mà bạn biết -->
+        <!-- Làm 1 ví dụ về BEM cho block có tên là `boy` -->
+        <!-- Áp dụng kiến thức về BEM đặt tên cho UI này: -->
+        <!-- https://static.collectui.com/shots/1436570/dropdown-menu-large -->
+
+        <!-- 10 thẻ inline -->
+        <!-- span strong b i em a button img code data -->
+        <!-- 10 thẻ block -->
+        <!-- div p h1 h2 h3 h4 h5 h6 section article body -->
+        <!-- 10 thẻ semantic -->
+        <!-- section header footer article aside nav main -->
+        <!-- Blog có tên là boy -->
+        <!-- 
+            Block: boy
+            Block__Element: boy__noise boy__leg boy__arm boy__eye
+            Block--Modifier: boy--fat, boy--thin
+            Block__Element--Modifier: boy__noise--beautiful, boy__eye--big
+         -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            voluptas ex dolores fuga error numquam distinctio sint consectetur
+            beatae similique quam, ducimus qui ratione asperiores repellat
+            veritatis in laudantium omnis
+            <a href="#!" target="_blank" rel="noopener noreferrer"
+                >google.com</a
+            >
+        </p>
+
+        <div class="dropdown">
+            <div class="dropdown__select">
+                <span class="dropdown__selected"></span>
+                <i class="fa fa-caret-down dropdown__caret"></i>
+            </div>
+
+            <div class="dropdown__list">
+                <div class="dropdown__item">
+                    <span class="dropdown__title"></span>
+                    <i class="fa fa-plus dropdown__icon"></i>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

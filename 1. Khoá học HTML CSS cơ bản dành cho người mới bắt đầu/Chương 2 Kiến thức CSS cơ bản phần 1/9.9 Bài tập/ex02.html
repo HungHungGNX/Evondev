@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exercises 02</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .box {
+                margin: 20px;
+                width: 500px;
+                border-left: 10px solid #2f91f3;
+                background-color: #abd1f7;
+                padding: 15px 20px;
+                line-height: 1.4;
+                display: -webkit-box;
+                -webkit-line-clamp: var(--line-clamp, 3);
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                border-radius: 6px;
+            }
+
+            .box .box-title {
+                display: -webkit-box;
+                -webkit-line-clamp: var(--line-clamp, 3);
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Tạo một khối có đoạn chữ rất dài bất kỳ, có độ rộng tối đa là `500px` hiển thị 3 hàng kết hợp dấu chấm -->
+        <div class="box">
+            <p class="box-title">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis modi natus sequi enim ex quaerat cum eius dolor neque,
+                quas laborum qui ratione maiores ipsam quisquam dolore dolorem
+                dolorum reiciendis! qui ratione maiores ipsam quisquam dolore
+                dolorem dolorum reiciendis!
+            </p>
+        </div>
+    </body>
+</html>

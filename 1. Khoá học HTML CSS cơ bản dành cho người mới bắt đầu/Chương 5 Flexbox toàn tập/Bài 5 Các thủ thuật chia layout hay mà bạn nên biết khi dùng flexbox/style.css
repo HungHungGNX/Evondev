@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --space-item: 40px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--space-item));
+    padding: 40px;
+}
+
+.item {
+    list-style: none;
+    width: calc(100% / 4 - var(--space-item));
+    margin-left: var(--space-item);
+    margin-bottom: var(--space-item);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.item .thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

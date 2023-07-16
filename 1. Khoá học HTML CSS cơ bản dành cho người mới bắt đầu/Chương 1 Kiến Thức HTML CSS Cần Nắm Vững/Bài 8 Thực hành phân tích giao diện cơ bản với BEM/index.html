@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 8 Thực hành phân tích giao diện cơ bản với BEM</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Block: flash-message -->
+        <!-- Element: img, title, desc, btn -->
+        <!-- Modifier: primary, secondary -->
+        <!-- Block__Element: flash-message__img, flash-message__title, flash-message__desc, flash-message__btn -->
+        <!-- Block--Modifier: flash-message--primary, flash-message--secondary -->
+        <!-- Blocj__Element--Modifier -->
+
+        <div class="container">
+            <div class="flash-message flash-message--primary">
+                <img
+                    src="./bem-1.jpg"
+                    alt="image"
+                    class="flash-message__img flash-message__img--primary"
+                />
+                <h3 class="flash-message__title flash-message__title--primary">
+                    Right on!
+                </h3>
+                <p class="flash-message__desc flash-message__desc--primary">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <button class="flash-message__btn flash-message__btn--primary">
+                    Continue
+                </button>
+            </div>
+            <div class="flash-message flash-message--secondary">
+                <img
+                    src="./bem-2.jpg"
+                    alt="image"
+                    class="flash-message__img flash-message__img--secondary"
+                />
+                <h3
+                    class="flash-message__title flash-message__title--secondary"
+                >
+                    Aw, Shucks!
+                </h3>
+                <p class="flash-message__desc flash-message__desc--secondary">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <button
+                    class="flash-message__btn flash-message__btn--secondary"
+                >
+                    Try Again
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

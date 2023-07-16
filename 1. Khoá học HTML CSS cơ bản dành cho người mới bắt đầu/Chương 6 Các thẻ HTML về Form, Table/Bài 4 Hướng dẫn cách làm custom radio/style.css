@@ -1,0 +1,39 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+.radio {
+  margin: 5rem;
+}
+.radio__input {
+  display: none;
+}
+.radio__input:checked + .radio__label::before {
+  background-color: #fc556f;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px #fc556f;
+}
+.radio__label {
+  position: relative;
+  padding-left: 5rem;
+  cursor: pointer;
+}
+.radio__label:before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3rem;
+  background-color: #eee;
+  box-shadow: 0 0 0 4px #eee, 0 0 0 6px #b7c1cb;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.25s ease;
+}
+
+/*# sourceMappingURL=style.css.map */

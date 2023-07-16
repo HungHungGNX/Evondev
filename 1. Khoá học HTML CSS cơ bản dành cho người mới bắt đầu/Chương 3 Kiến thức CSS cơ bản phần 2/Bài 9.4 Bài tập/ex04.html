@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ex04</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./reset.css" />
+        <style>
+            body {
+                margin: 40px;
+            }
+
+            div[data-link^="https"] {
+                color: red;
+            }
+
+            div[data-link$=".vn"] {
+                color: blue;
+            }
+
+            div[data-name*="hello"] {
+                color: rgb(0, 255, 128);
+            }
+            input[type="email"] {
+                background-color: antiquewhite;
+            }
+            input[name="fullname"] {
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Dùng kiến thức về Selectors để chọn ra các thẻ `div` có `data-link` bắt đầu bằng https -->
+        <!-- Chọn ra các thẻ `div` có `data-link` kết thúc bằng `.vn` -->
+        <!-- Chọn ra các thẻ `div` có `data-name` có chứa chữ `hello` -->
+        <!-- Chọn ra `input` có `type` là email -->
+        <!-- Chọn ra `input` có `name` là fullname -->
+        <div data-link="https://google.com">https://google.com</div>
+        <div data-link="https://vnexpress.vn">http://facebook.com</div>
+        <div data-name="hello">hello</div>
+        <div data-name="againhello">again hello</div>
+        <input type="email" name="email" />
+        <input type="text" name="fullname" />
+    </body>
+</html>

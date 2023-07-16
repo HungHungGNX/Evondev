@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins";
+    font-size: 1.6rem;
+}
+
+.font p {
+    line-height: 1.5;
+    text-align: center;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+    max-width: 300px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    /* hien thi 3 cham tren 1 hang */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* hien thi 3 cham tren nhieu hang */
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    text-overflow: ellipsis;
+}

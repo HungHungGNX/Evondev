@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.bar {
+    margin: 5rem auto;
+    width: 40rem;
+    height: 1rem;
+    background-color: #ccc;
+    border-radius: 2rem;
+}
+
+.bar-progress {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    border-radius: inherit;
+    background-image: linear-gradient(to right, #73c8f7, #69f5e2);
+}
+
+.bar-progress::after {
+    width: 2rem;
+    height: 2rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    content: "";
+    background-image: linear-gradient(to right, #73c8f7, #69f5e2);
+}
